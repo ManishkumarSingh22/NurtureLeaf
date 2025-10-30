@@ -74,7 +74,7 @@ nav .btn:hover {
 
 /* Hero Section */
 .hero {
-  background: url('./images/5151867.jpg') center/cover no-repeat;
+  background: url('./5151867.jpg') center/cover no-repeat;
   color: white;
   height: 85vh;
   display: flex;
