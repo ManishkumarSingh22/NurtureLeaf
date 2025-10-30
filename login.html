@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login | Nurture Leaf</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="./images/logo.png">
+  <link rel="stylesheet" href="style-login.css">
+</head>
+<body>
+<!-- ...existing code... -->
+</body>
+</html>
+<body>
+  <!-- Header with logo -->
+  <!-- ...existing code... -->
+<header>
+  <div class="logo">
+    <a href="index.html">
+      <img src="Images/logo.png" alt="Nurtura Logo">
+      <span>Nurture leaf</span> <!-- Changed from Nurture Leaf to Nurtura -->
+    </a>
+  </div>
+</header>
+<!-- ...existing code... -->
+
+  <div class="auth-container">
+    <div class="auth-box">
+      <h2>Welcome Back 🌱</h2>
+      <div class="tabs">
+        <button class="tab-btn active" onclick="showForm('login')">Login</button>
+        <button class="tab-btn" onclick="showForm('signup')">Sign Up</button>
+      </div>
+
+      <!-- Login Form -->
+      <form id="login-form" class="form active">
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button type="button" onclick="window.location.href='dashboard.html'">Login</button>
+        <p class="switch">Don’t have an account? <a href="#" onclick="showForm('signup')">Sign Up</a></p>
+      </form>
+
+      <!-- Sign Up Form -->
+      <form id="signup-form" class="form">
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+       <button type="button" onclick="window.location.href='dashboard.html'">Sign Up</button>
+        <p class="switch">Already have an account? <a href="#" onclick="showForm('login')">Login</a></p>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function showForm(type) {
+      const loginForm = document.getElementById('login-form');
+      const signupForm = document.getElementById('signup-form');
+      const tabBtns = document.querySelectorAll('.tab-btn');
+
+      if (type === 'login') {
+        loginForm.classList.add('active');
+        signupForm.classList.remove('active');
+        tabBtns[0].classList.add('active');
+        tabBtns[1].classList.remove('active');
+      } else {
+        signupForm.classList.add('active');
+        loginForm.classList.remove('active');
+        tabBtns[1].classList.add('active');
+        tabBtns[0].classList.remove('active');
+      }
+        document.getElementById('login-form').onsubmit = function(e) { e.preventDefault(); };
+  document.getElementById('signup-form').onsubmit = function(e) { e.preventDefault(); };
+    }
+
+  // Enable Enter key to submit login and go to dashboard
+  document.addEventListener("DOMContentLoaded", function() {
+    const loginForm = document.getElementById("login-form");
+    if (loginForm) {
+      loginForm.addEventListener("keydown", function(event) {
+        if (event.key === "Enter") {
+          event.preventDefault();
+          window.location.href = "dashboard.html";
+        }
+      });
+    }
+  });
+  </script>
+</body>
