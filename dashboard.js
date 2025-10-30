@@ -613,6 +613,18 @@ document.querySelectorAll(".plant-card").forEach(card => {
   });
 });
 
+// allow closing modal with Escape key and by clicking outside content
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Escape') closeModal();
+});
+
+const plantModalElem = document.getElementById('plantModal');
+if (plantModalElem) {
+  plantModalElem.addEventListener('click', function (e) {
+    if (e.target === plantModalElem) closeModal();
+  });
+}
+
 // Chatbot
 function toggleChat() {
   const chatbotPanel = document.getElementById("chatbotPanel");
