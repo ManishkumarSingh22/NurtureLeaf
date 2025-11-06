@@ -1,17 +1,31 @@
+/* 🌿 Nurtura Modern Dashboard CSS */
+
 /* General */
 body {
   margin: 0;
-  font-family: "Segoe UI", Arial, sans-serif;
-  background: url('./Screenshot_1.png') center/cover no-repeat;
-  border: 15px solid #2e7d32;
+  font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+  background: 
+    linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), 
+    url('./5151867.jpg') center/cover no-repeat fixed;
+  border: 12px solid #2e7d32;
   min-height: 100vh;
   display: flex;
+  color: #333;
+  overflow-x: hidden;
+}
+
+:root {
+  --green: #2e7d32;
+  --light-green: #66bb6a;
+  --shadow: rgba(0, 0, 0, 0.1);
+  --radius: 14px;
+  --transition: 0.3s ease;
 }
 
 /* Sidebar */
 .sidebar {
   width: 250px;
-  background: #2e7d32;
+  background: linear-gradient(180deg, #2e7d32, #388e3c);
   color: white;
   height: 100vh;
   padding: 20px;
@@ -20,6 +34,7 @@ body {
   left: -260px;
   transition: left 0.3s ease;
   z-index: 1000;
+  box-shadow: 4px 0 10px rgba(0,0,0,0.15);
 }
 
 .sidebar.open {
@@ -36,11 +51,13 @@ body {
 .sidebar .logo {
   display: flex;
   align-items: center;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
 .sidebar .logo img {
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   margin-right: 10px;
   border-radius: 50%;
   background: white;
@@ -49,15 +66,16 @@ body {
 
 .sidebar nav a {
   display: block;
-  margin: 12px 0;
+  margin: 14px 0;
   text-decoration: none;
   color: white;
   font-weight: 500;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, transform 0.2s;
 }
 
 .sidebar nav a:hover {
   color: #c8facc;
+  transform: translateX(5px);
 }
 
 /* Submenu */
@@ -70,243 +88,127 @@ body {
   display: block;
 }
 
-/* Close button */
-.close-btn {
-  background: none;
-  border: none;
-  color: white;
-  font-size: 1.4rem;
-  cursor: pointer;
-}
-
-/* Search Bar */
-.search-bar {
-  margin: 20px 0;
-  display: flex;
-  justify-content: center;
-}
-
-.search-bar input {
-  width: 300px;
-  padding: 10px 15px;
-  border: 2px solid #2e7d32;
-  border-radius: 50px;
-  font-size: 1rem;
-  outline: none;
-  transition: 0.3s ease;
-}
-
-.search-bar input:focus {
-  box-shadow: 0px 0px 8px rgba(46, 125, 50, 0.5);
-}
-
-.clear-search {
-  background: transparent;
-  border: none;
-  color: #2e7d32;
-  font-size: 1.2rem;
-  cursor: pointer;
-  margin-left: -35px;
-  margin-top: 2px;
-  outline: none;
-  display: inline;
-  position: relative;
-  z-index: 2;
-}
-
-/* Main Content */
-.main-content {
-  margin-left: 0;
-  padding: 20px;
-  flex: 1;
-}
-
-/* Plant Gallery */
-.plant-gallery {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.plant-card {
-  background: white;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  width: 200px;
-  text-align: center;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.plant-card:hover {
-  transform: translateY(-5px);
-}
-
-.plant-card img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-/* Modal */
-.modal {
-  position: fixed;
-  inset: 0;
-  display: none; /* JS toggles display */
-  align-items: center;
-  justify-content: center;
-  background: rgba(0,0,0,0.45);
-  z-index: 1000;
-}
-
-.modal-content {
-  position: relative;
-  background: #fff;
-  padding: 24px;
-  border-radius: 8px;
-  max-width: 720px;
-  width: 90%;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.25);
-}
-
-.modal-content .modal-close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  border: none;
-  background: transparent;
-  font-size: 18px;
-  cursor: pointer;
-  padding: 6px;
-  line-height: 1;
-  color: #333;
-  border-radius: 4px;
-}
-
-.modal-content .modal-close:hover {
-  background: rgba(0,0,0,0.06);
-}
-
-/* Chatbot */
-.chatbot {
-  position: fixed;
-  bottom: 80px;
-  right: 20px;
-  width: 300px;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  display: none;
-  flex-direction: column;
-}
-
-.chat-header {
+/* Dashboard Header */
+.dashboard-header {
   background: #2e7d32;
   color: white;
-  padding: 10px;
-  font-weight: bold;
-  border-radius: 12px 12px 0 0;
-}
-
-.chat-body {
-  padding: 10px;
-  max-height: 250px;
-  overflow-y: auto;
-  font-size: 0.9rem;
-}
-
-.chat-footer {
-  display: flex;
-  border-top: 1px solid #ccc;
-}
-
-.chat-footer input {
-  flex: 1;
-  padding: 10px;
-  border: none;
-}
-
-.chat-footer button {
-  background: #2e7d32;
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-}
-
-/* Chatbot full panel */
-.chatbot-panel {
-  position: fixed;
-  top: 0;
-  right: -400px;
-  width: 400px;
-  height: 100vh;
-  background: #ffffff;
-  border-left: 5px solid #2e7d32;
-  box-shadow: -4px 0 10px rgba(0,0,0,0.2);
-  display: flex;
-  flex-direction: column;
-  transition: right 0.3s ease;
-  z-index: 1200;
-}
-
-.chatbot-panel.open {
-  right: 0;
-}
-
-.chatbot-header {
-  background: #2e7d32;
-  color: white;
-  padding: 15px;
-  font-weight: bold;
+  padding: 14px 50px; /* Reduced vertical padding */
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-.chatbot-body {
-  flex: 1;
-  padding: 15px;
-  overflow-y: auto;
-  font-size: 0.95rem;
-}
-
-.chatbot-footer {
+.dashboard-header .logo {
   display: flex;
-  border-top: 1px solid #ccc;
-}
-
-.chatbot-footer input {
-  flex: 1;
-  padding: 12px;
-  border: none;
-  font-size: 1rem;
-}
-
-.chatbot-footer button {
-  background: #2e7d32;
-  color: white;
-  border: none;
-  padding: 12px 20px;
-  cursor: pointer;
+  align-items: center;
+  font-size: 1.8rem; /* Reduced font size */
   font-weight: bold;
+  margin-left: 50px; /* Space after sidebar */
 }
 
-/* Floating AI Button */
-.chat-toggle {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #2e7d32;
-  color: white;
+.dashboard-header .logo img {
+  height: 40px; /* Reduced size */
+  width: 40px; /* Reduced size */
+  margin-right: 8px; /* Reduced margin */
+  border-radius: 50%;
+  background: white;
+  padding: 5px; /* Reduced padding */
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+}
+
+.dashboard-header .logo span {
+  color: #c8facc;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Further reduced gap for more buttons */
+}
+
+.header-actions button {
+  color: rgba(255, 255, 255, 0.85);
+  background: none;
   border: none;
-  border-radius: 8px;
-  padding: 15px;
+  padding: 8px 12px; /* Reduced padding */
+  font-size: 1rem; /* Smaller font size */
   cursor: pointer;
-  font-size: 1.2rem;
-  z-index: 1100;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Reduced gap */
+  white-space: nowrap;
+  position: relative;
+}
+
+.header-actions .nav-btn {
+  position: relative;
+}
+
+.header-actions .nav-btn::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: #c8facc;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.header-actions .nav-btn:hover {
+  color: #fff;
+}
+
+.header-actions .nav-btn:hover::after {
+  width: 80%;
+}
+
+/* Styling for logout button - now matching other nav items */
+.header-actions .logout-btn {
+  margin-left: 15px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.85);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  cursor: pointer;
+  position: relative;
+  font-size: 0.95rem;
+  font-family: inherit;
+}
+
+.header-actions .logout-btn::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: #ffcdd2;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.header-actions .logout-btn:hover {
+  color: #fff;
+}
+
+.header-actions .logout-btn:hover::after {
+  width: 80%;
+}
+
+.header-actions .logout-btn i {
+  font-size: inherit;
+  margin-right: 4px;
 }
 
 /* Hamburger */
@@ -314,16 +216,290 @@ body {
   position: fixed;
   top: 15px;
   left: 15px;
-  background: #2e7d32;
+  background: var(--green);
   color: white;
   border: none;
   padding: 10px 14px;
-  border-radius: 6px;
+  border-radius: 8px;
   font-size: 1.2rem;
   cursor: pointer;
   z-index: 1100;
+  box-shadow: 0 4px 10px var(--shadow);
+  transition: transform var(--transition);
 }
 
-.hamburger.hidden {
+.hamburger:hover {
+  transform: scale(1.08);
+}
+
+/* Search Bar */
+.search-bar {
+  margin: 25px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar input {
+  width: 340px;
+  padding: 12px 18px;
+  border: 2px solid var(--green);
+  border-radius: 50px;
+  font-size: 1rem;
+  outline: none;
+  transition: box-shadow var(--transition);
+}
+
+.search-bar input:focus {
+  box-shadow: 0px 0px 10px rgba(46, 125, 50, 0.4);
+}
+
+.clear-search {
+  background: transparent;
+  border: none;
+  color: var(--green);
+  font-size: 1.3rem;
+  cursor: pointer;
+  margin-left: -35px;
+  outline: none;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 30px;
+  margin-left: 0;
+  text-align: center;
+}
+
+/* 🌱 Plant Gallery */
+.plant-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 28px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+  justify-items: center;
+}
+
+.plant-card {
+  background: white;
+  border-radius: var(--radius);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+  width: 180px;
+  height: 240px;
+  text-align: center;
+  cursor: pointer;
+  transition: all var(--transition);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+}
+
+.plant-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.plant-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.plant-card h3 {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #2e7d32;
+  font-weight: 600;
+}
+
+/* 🌼 Modal */
+.modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.45);
+  z-index: 2000;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 14px;
+  padding: 24px;
+  width: min(720px, 90%);
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.modal-content .modal-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  border: none;
+  background: transparent;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* 💬 Chatbot Panel */
+.chatbot-panel {
+  position: fixed;
+  top: 0;
+  right: -520px;
+  width: 520px;
+  height: 100vh;
+  background: #ffffff;
+  border-left: 6px solid var(--green);
+  box-shadow: -6px 0 20px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  transition: right 0.35s ease;
+  z-index: 1200;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+
+.chatbot-panel.open {
+  right: 0;
+}
+
+.chatbot-header {
+  background: linear-gradient(90deg, var(--green), var(--light-green));
+  color: white;
+  padding: 18px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top-left-radius: 16px;
+}
+
+.chatbot-body {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  font-size: 0.95rem;
+}
+
+.chatbot-footer {
+  display: flex;
+  border-top: 1px solid #ccc;
+  padding: 10px;
+  background: #f8f8f8;
+}
+
+.chatbot-footer input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+}
+
+.chatbot-footer button {
+  background: var(--green);
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-left: 8px;
+  transition: all var(--transition);
+}
+
+.chatbot-footer button:hover {
+  background: var(--light-green);
+}
+
+/* 🤖 Floating Nurtura AI Button */
+.chat-toggle {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: linear-gradient(135deg, #2e7d32, #43a047);
+  color: white;
+  border: none;
+  border-radius: 14px;
+  padding: 22px 32px;
+  cursor: pointer;
+  font-size: 1.3rem;
+  font-weight: 600;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+  z-index: 1100;
+  transition: all 0.25s ease;
+}
+
+.chat-toggle:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .plant-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .chatbot-panel {
+    width: 100%;
+    right: -100%;
+  }
+  .chatbot-panel.open {
+    right: 0;
+  }
+  .chat-toggle {
+    padding: 18px 26px;
+    font-size: 1.1rem;
+  }
+}
+/* Hide hamburger when sidebar is open */
+.sidebar.open ~ .hamburger {
   display: none;
 }
+/* Sidebar active link styling */
+.sidebar-menu a.active, .sidebar-menu a:hover {
+	background-color: #8bb78e;
+	color: #2e7d32;
+	font-weight: 600;
+	border-left: 4px solid #2e7d32;
+	display: block;
+	padding: 5px 5px 5px 10px ;
+  border-radius: 6px 4px 4px 6px;
+  margin-left: -5px;
+}
+
+/* Sidebar open/close animations (optional) */
+.sidebar {
+  transform: translateX(-250px);
+  transition: transform 0.3s ease;
+}
+.sidebar.open {
+  transform: translateX(0);
+}
+
+/* Hide the sidebar toggle button when sidebar is open */
+.hamburger {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: #2e7d32;
+  color: white;
+  border: none;
+  padding: 10px 12px;
+  font-size: 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+
