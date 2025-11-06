@@ -9,7 +9,7 @@ Light:
 Bright, indirect sunlight. Avoid harsh direct rays.
 
 Water:
-Water once a week when top soil feels dry. Don’t overwater.
+Water once a week when top soil feels dry. Don't overwater.
 
 Temperature & Humidity:
 Prefers 18–30°C and high humidity. Mist leaves occasionally.
@@ -55,7 +55,7 @@ Benefits:
 Purifies air and adds positivity to space.
 
 Care Tip:
-Trim regularly to keep it bushy and healthy.`,
+Trim regularly to keep it bushy and healthy.`,
   "Jade Plant": `🌿 Jade Plant (Crassula ovata)
 
 Description:
@@ -83,7 +83,7 @@ Benefits:
 Brings positive energy and purifies air.
 
 Care Tip:
-Avoid overwatering; ensure pot has good drainage.`,
+Avoid overwatering; ensure pot has good drainage.`,
   "Prayer Plant": `🌿 Prayer Plant (Maranta leuconeura)
 
 Description:
@@ -111,7 +111,7 @@ Benefits:
 Beautiful foliage that adds calmness and color to homes.
 
 Care Tip:
-Clean leaves gently and keep away from cold drafts.`,
+Clean leaves gently and keep away from cold drafts.`,
 "Spider Plant": `Spider Plant (Chlorophytum comosum)
 
 Description:
@@ -139,7 +139,7 @@ Benefits:
 Excellent air purifier and easy to care for.
 
 Care Tip:
-Trim brown tips and repot yearly for fresh growth.`,
+Trim brown tips and repot yearly for fresh growth.`,
 "Areca Palm" : `🌿 Areca Palm (Dypsis lutescens)
 
 Description:
@@ -167,7 +167,7 @@ Benefits:
 Excellent air purifier and natural humidifier.
 
 Care Tip:
-Wipe leaves often and avoid overwatering.`,
+Wipe leaves often and avoid overwatering.`,
 "Rubber Plant" : `🌿 Rubber Plant (Ficus elastica)
 
 Description:
@@ -195,7 +195,7 @@ Benefits:
 Purifies indoor air and adds rich greenery.
 
 Care Tip:
-Wipe leaves regularly to keep them shiny and dust-free.`,
+Wipe leaves regularly to keep them shiny and dust-free.`,
 "Boston Fern":`🌿 Boston Fern (Nephrolepis exaltata)
 
 Description:
@@ -223,7 +223,7 @@ Benefits:
 Excellent natural air purifier and humidity booster.
 
 Care Tip:
-Trim dry fronds and keep away from AC or heaters.`,
+Trim dry fronds and keep away from AC or heaters.`,
 "Croton":`🌿 Croton Plant (Codiaeum variegatum)
 
 Description:
@@ -251,7 +251,7 @@ Benefits:
 Adds color and freshness to any décor.
 
 Care Tip:
-Wipe leaves regularly and avoid moving the plant too often.`,
+Wipe leaves regularly and avoid moving the plant too often.`,
 "Oyster Plant":`🌿 Oyster Plant (Tradescantia spathacea)
 
 Description:
@@ -279,7 +279,7 @@ Benefits:
 Low-maintenance and visually attractive foliage.
 
 Care Tip:
-Trim old leaves regularly to keep it looking fresh.`,
+Trim old leaves regularly to keep it looking fresh.`,
 "Cactus":`🌵 Cactus (Cactaceae)
 
 Description:
@@ -307,7 +307,7 @@ Benefits:
 Improves air quality and adds a modern, minimal look.
 
 Care Tip:
-Rotate occasionally for even growth and avoid overwatering.`,
+Rotate occasionally for even growth and avoid overwatering.`,
 
   "Aloe Vera": `🌿 Aloe Vera (Aloe barbadensis miller)
 
@@ -336,7 +336,7 @@ Benefits:
 Heals burns, improves skin, and purifies air.
 
 Care Tip:
-Water at the base — avoid wetting leaves.`,
+Water at the base – avoid wetting leaves.`,
   "Snake Plant": "Snake Plant purifies air. Thrives in low light, requires little water, very hardy.",
   "Tulsi": `🌿 Tulsi (Holy Basil - Ocimum tenuiflorum)
 
@@ -365,7 +365,7 @@ Benefits:
 Boosts immunity, purifies air, and holds religious value.
 
 Care Tip:
-Pinch flower buds regularly to promote more leaf growth.`,
+Pinch flower buds regularly to promote more leaf growth.`,
 "Dragon Plant":`🌿 Dragon Plant (Dracaena marginata)
 
 Description:
@@ -393,7 +393,7 @@ Benefits:
 Purifies air and adds an elegant, modern look.
 
 Care Tip:
-Wipe leaves and avoid overwatering.`,
+Wipe leaves and avoid overwatering.`,
 "Bamboo Tree":`🎋 Bamboo Plant (Dracaena sanderiana / Lucky Bamboo)
 
 Description:
@@ -422,7 +422,7 @@ Benefits:
 Brings positivity, purifies air, and enhances home décor.
 
 Care Tip:
-Use clean, filtered water and keep away from harsh sunlight.`,
+Use clean, filtered water and keep away from harsh sunlight.`,
 "Shami Plant" : `🌿 Shami Plant (Prosopis cineraria)
 
 Description:
@@ -450,7 +450,7 @@ Benefits:
 Brings positive energy, improves air quality, and is used in traditional rituals.
 
 Care Tip:
-Place in sunny outdoor area and avoid excess watering.`,
+Place in sunny outdoor area and avoid excess watering.`,
 "Rose":`🌹 Rose Plant (Rosa spp.)
 
 Description:
@@ -478,7 +478,7 @@ Benefits:
 Adds beauty, fragrance, and positivity to the surroundings.
 
 Care Tip:
-Prune regularly to encourage new blooms and healthy growth.`,
+Prune regularly to encourage new blooms and healthy growth.`,
 "Jasmine":`🌼 Jasmine Plant (Jasminum spp.)
 
 Description:
@@ -506,7 +506,7 @@ Benefits:
 Relieves stress, adds fragrance, and purifies air.
 
 Care Tip:
-Prune after flowering to maintain shape and promote new growth.`,
+Prune after flowering to maintain shape and promote new growth.`,
 "Hibiscus":`🌺 Hibiscus (Hibiscus rosa-sinensis)
 
 Description:
@@ -534,7 +534,7 @@ Benefits:
 Attracts pollinators and has medicinal and cosmetic uses.
 
 Care Tip:
-Prune regularly to encourage more flowers and healthy growth.`,
+Prune regularly to encourage more flowers and healthy growth.`,
 "Marigold":`🌼 Marigold (Tagetes spp.)
 
 Description:
@@ -562,8 +562,37 @@ Benefits:
 Repels insects, adds color, and is used in festivals and rituals.
 
 Care Tip:
-Remove dried flowers regularly to promote new blooms.`
+Remove dried flowers regularly to promote new blooms.`
 };
+
+// ===== SECTION MANAGEMENT =====
+function showSection(sectionId, linkElement) {
+  // Hide all sections
+  const sections = ['homeSection', 'myPlantsSection', 'communitySection', 'guidesSection', 'shopSection', 'aboutSection', 'faqSection'];
+  sections.forEach(id => {
+    const section = document.getElementById(id);
+    if (section) section.style.display = 'none';
+  });
+  
+  // Show selected section
+  const targetSection = document.getElementById(sectionId);
+  if (targetSection) {
+    targetSection.style.display = 'block';
+  }
+  
+  // Update active link styling
+  document.querySelectorAll('.sidebar-menu a').forEach(link => {
+    link.classList.remove('active');
+  });
+  if (linkElement) {
+    linkElement.classList.add('active');
+  }
+  
+  // Close sidebar on mobile after selection
+  if (window.innerWidth <= 768) {
+    toggleSidebar();
+  }
+}
 
 // Search Function
 const searchInput = document.getElementById("searchInput");
@@ -582,7 +611,6 @@ if (searchInput && clearSearch) {
   clearSearch.addEventListener("click", function () {
     searchInput.value = "";
     clearSearch.style.display = "none";
-    // Trigger input event to reset the gallery
     searchInput.dispatchEvent(new Event("input"));
   });
 }
@@ -613,7 +641,7 @@ document.querySelectorAll(".plant-card").forEach(card => {
   });
 });
 
-// allow closing modal with Escape key and by clicking outside content
+// Allow closing modal with Escape key and by clicking outside content
 document.addEventListener('keydown', function (e) {
   if (e.key === 'Escape') closeModal();
 });
@@ -630,51 +658,190 @@ function toggleChat() {
   const chatbotPanel = document.getElementById("chatbotPanel");
   if (chatbotPanel) {
     chatbotPanel.classList.toggle("open");
-    // Make sure your CSS handles .chatbot-panel.open { display: flex; } or similar
   }
 }
 
+// 🌿 Enhanced Nurtura AI with keyword-based logic
 function sendMessage() {
   const input = document.getElementById("chatInput");
   const chatBody = document.getElementById("chatBody");
-  if (input && chatBody) {
-    const message = input.value.trim();
-    if (message) {
-      const userMsg = document.createElement("p");
-      userMsg.innerHTML = "<strong>You:</strong> " + message;
-      chatBody.appendChild(userMsg);
+  const userMsg = input.value.trim();
 
-      // Improved keyword-based bot response
-      let botReply = "I'm here to help with your plant care questions!";
+  if (userMsg === "") return;
 
-      const msg = message.toLowerCase();
+  // User message bubble
+  const userBubble = document.createElement("p");
+  userBubble.style.textAlign = "right";
+  userBubble.style.color = "#2e7d32";
+  userBubble.textContent = userMsg;
+  chatBody.appendChild(userBubble);
 
-      if (msg.includes("water") || msg.includes("watering")) {
-        botReply = "Most plants prefer their soil to dry out slightly between waterings. Check the top inch of soil—if it's dry, it's time to water!";
-      } else if (msg.includes("sun") || msg.includes("light")) {
-        botReply = "Most indoor plants need bright, indirect sunlight. Avoid direct harsh sun unless your plant is a succulent or cactus.";
-      } else if (msg.includes("fertilizer") || msg.includes("feed")) {
-        botReply = "Fertilize your plants during their growing season (spring and summer) with a balanced, water-soluble fertilizer every 2-4 weeks.";
-      } else if (msg.includes("yellow") && msg.includes("leaves")) {
-        botReply = "Yellow leaves can be caused by overwatering, underwatering, or lack of nutrients. Check your watering routine and consider fertilizing.";
-      } else if (msg.includes("disease") || msg.includes("spot") || msg.includes("fungus")) {
-        botReply = "Remove affected leaves and avoid overhead watering. Ensure good air circulation. If needed, use an organic fungicide.";
-      } else if (msg.includes("pest") || msg.includes("insect") || msg.includes("bug")) {
-        botReply = "Inspect your plant for pests like aphids or spider mites. Wipe leaves with soapy water or use neem oil for treatment.";
-      } else if (msg.includes("hello") || msg.includes("hi")) {
-        botReply = "Hello! How can I assist you with your plants today?";
-      } else if (msg.includes("thank")) {
-        botReply = "You're welcome! Let me know if you have more questions.";
+  // Bot thinking bubble
+  const botBubble = document.createElement("p");
+  botBubble.textContent = "🌿 Nurtura AI is thinking...";
+  chatBody.appendChild(botBubble);
+
+  chatBody.scrollTop = chatBody.scrollHeight;
+
+  // 🌿 Keyword-based database
+  const plantKeywords = {
+    monstera: {
+      disease: "🪴 Monstera diseases: Overwatering is the most common issue, causing yellowing leaves, mushy stems, and root rot—improve drainage, trim affected roots, and repot in fresh soil. Pests like spider mites and mealybugs can appear; treat with insecticidal soap or neem oil. Nutrient deficiencies or low light may lead to small, leggy growth.",
+      watering: "💧 Water Monstera when the top 1-2 inches of soil are dry, usually every 7-10 days depending on humidity and temperature. Use lukewarm water, ensure pots have drainage holes, and avoid letting it sit in standing water to prevent rot.",
+      light: "☀️ Monstera prefers bright, indirect light for optimal growth and fenestration (leaf holes). Place near east- or west-facing windows; direct harsh sun can scorch leaves, while too little light causes slow growth and smaller leaves.",
+      fertilizer: "🌱 Apply a balanced, water-soluble fertilizer (like 20-20-20) diluted to half strength every 4-6 weeks during the growing season (spring-summer). Skip in fall-winter when growth slows to avoid salt buildup."
+    },
+    pothos: {
+      disease: "🍃 Pothos diseases: Root rot from overwatering shows as yellow, wilting leaves—let soil dry out, trim rotted roots, and repot. Bacterial leaf spot or fungal issues cause brown spots; improve air circulation and avoid overhead watering. Pests like aphids or scale can infest; rinse or use neem oil.",
+      watering: "💧 Allow the top 2 inches of soil to dry between waterings, typically every 1-2 weeks. Pothos are forgiving but overwatering leads to rot—use well-draining soil and check soil moisture with your finger before adding water.",
+      light: "☀️ Pothos tolerates low to medium indirect light but grows best in bright, indirect spots. Variegated varieties need more light to maintain color; avoid deep shade where growth stalls or direct sun that burns leaves.",
+      fertilizer: "🌿 Feed every 4-6 weeks in spring-summer with a balanced liquid fertilizer at half strength. Over-fertilizing causes leggy growth; withhold in winter when the plant is dormant."
+    },
+    aloe: {
+      disease: "🪴 Aloe vera diseases: Overwatering causes soft, mushy leaves and root rot—dry out soil completely and repot in cactus mix. Aloe rust or fungal spots appear as orange pustules; remove affected leaves and improve airflow. Mealybugs are common pests; wipe with alcohol.",
+      watering: "💧 Water deeply but infrequently, only when the soil is completely dry (every 2-3 weeks in summer, monthly in winter). Use the 'soak and dry' method with well-draining soil to mimic desert conditions and prevent rot.",
+      light: "☀️ Aloe vera needs 6+ hours of bright, direct sunlight daily for healthy growth and gel production. Indoor plants thrive near south-facing windows; insufficient light causes etiolation (stretched, pale leaves).",
+      fertilizer: "🌱 Fertilize sparingly every 6-8 weeks in spring-summer with a diluted cactus/succulent fertilizer (low nitrogen, like 10-10-10 at 1/4 strength). Avoid winter feeding to prevent weak growth."
+    },
+    rose: {
+      disease: "🌹 Rose diseases: Black spot (dark spots with yellow halos) and powdery mildew (white powdery coating) are fungal issues—remove infected leaves, water at base, and apply neem oil or fungicide. Aphids and thrips cause curled leaves; hose off or use insecticidal soap. Stem canker leads to dieback.",
+      watering: "💧 Water deeply 1-2 times per week in mornings to keep soil moist but not soggy, aiming for 1 inch per session. Mulch to retain moisture; avoid wetting foliage to prevent diseases, and reduce in cooler months.",
+      light: "☀️ Roses require 6-8 hours of full direct sunlight daily for abundant blooms. Morning sun with afternoon shade prevents scorching; insufficient light reduces flowering and invites legginess.",
+      fertilizer: "🌼 Use a rose-specific or balanced fertilizer (high phosphorus for blooms, like 10-18-10) every 4-6 weeks from spring to late summer. Incorporate compost annually; over-fertilizing burns roots."
+    },
+    hibiscus: {
+      disease: "🌺 Hibiscus diseases: Yellowing leaves often signal overwatering, nutrient deficiency, or aphids—adjust moisture and inspect undersides for pests, treating with horticultural oil. Fungal issues like powdery mildew or leaf spot cause spots; ensure good air flow and avoid overhead watering. Bud drop from stress.",
+      watering: "💧 Water deeply when the top inch of soil is dry, daily in hot summers but less (every 3-4 days) in cooler weather or winter. Keep soil evenly moist during flowering; poor drainage leads to root rot.",
+      light: "☀️ Hibiscus loves full sun with 6+ hours daily for vibrant blooms. Partial shade in hottest climates prevents leaf scorch; indoor plants need bright south-facing windows.",
+      fertilizer: "🌱 Apply a high-potassium bloom booster (like 10-30-20) weekly during active growth (spring-fall). Use diluted liquid feeds; reduce in winter to avoid salt buildup and leggy growth."
+    },
+    jade: {
+      disease: "Jade Plant diseases: Root rot is #1 killer—caused by overwatering, poor drainage, or heavy soil. Signs: soft, mushy, translucent leaves. Fix: Remove from pot, trim black/rotten roots, let dry 1–2 days, repot in fresh cactus mix. Mealybugs appear as white cottony spots—wipe with 70% isopropyl alcohol.",
+      watering: "Water thoroughly only when soil is 100% bone dry—typically every 2–3 weeks in summer, 4–6 weeks in winter. Use 'soak and dry' method. Jade stores water in thick leaves—overwatering = death. Use terracotta pots for faster drying.",
+      light: "Bright direct sunlight for 4–6 hours daily is ideal—south or west window. Jade loves sun! Insufficient light causes etiolation (long, weak stems). Direct morning sun + filtered afternoon is perfect.",
+      fertilizer: "Feed sparingly: every 6–8 weeks in spring/summer with diluted succulent fertilizer at ¼–½ strength. Avoid high-nitrogen—causes soft, leggy growth. No feeding in fall/winter."
+    },
+    prayer: {
+    disease: "Prayer Plant (Maranta leuconeura) diseases: Crispy brown leaf edges = low humidity or dry soil. Fix: mist daily, use pebble tray, or grow in bathroom. Root rot from soggy soil — repot in well-draining mix, trim black roots. Spider mites love dry conditions — look for webbing and yellow stippling; shower plant and apply neem oil. Fungal leaf spot: brown/black spots — improve airflow, avoid wetting leaves.",
+    watering: "Keep soil consistently moist but never waterlogged — water when top ½ inch feels dry (every 4–7 days). Use distilled or rainwater to avoid fluoride/chlorine burn (tap water causes brown tips). Bottom watering prevents leaf rot. Reduce slightly in winter but never let it dry out fully.",
+    light: "Bright to medium indirect light — east or north window. Avoid direct sun (scorches leaves). Low light = faded variegation and slow growth. Prayer plants 'pray' (fold up) at night — if they don’t, light may be too low. Use grow lights in dark rooms (12–14 hrs/day).",
+    fertilizer: "Feed every 2 weeks during growing season (spring–summer) with balanced liquid fertilizer (e.g., 10-10-10) at ½ strength. Reduce to monthly in fall/winter. Over-fertilizing burns sensitive roots — always dilute. Flush soil every 3 months."
+    },
+    spider: {
+    disease: "Spider Plant (Chlorophytum comosum) diseases: Brown leaf tips = fluoride in tap water, over-fertilizing, or low humidity. Fix: use filtered/rainwater, dilute fertilizer, mist regularly. Root rot from poor drainage — repot in fresh, airy mix. Pale, leggy growth = too little light. Rare pests: aphids, mealybugs — rinse with water or use insecticidal soap.",
+    watering: "Water when top 1 inch of soil is dry — usually weekly. Let excess drain fully. Spider plants are forgiving but hate soggy feet. Reduce in winter. Plantlets (babies) need more frequent watering than mature plants. Pro tip: submerge pot in water for 10 mins if very dry.",
+    light: "Medium to bright indirect light. Tolerates low light but grows slowly and loses variegation. Avoid harsh direct sun (bleaches leaves). East or west windows ideal. North = okay but slower. Great for hanging baskets near bright windows.",
+    fertilizer: "Feed monthly in spring/summer with balanced liquid fertilizer (10-10-10) at ½ strength. Skip winter. Over-fertilizing causes tip burn. Use organic options like fish emulsion or compost tea for healthier growth."
+    },
+    areca: {
+    disease: "Areca Palm (Dypsis lutescens) diseases: Yellow lower fronds = natural aging or overwatering. Brown tips = dry air, fluoride, or inconsistent watering. Spider mites (fine webbing) thrive in dry indoor air — increase humidity to 50%+, shower weekly. Lethal yellowing (bacterial) = fatal; no cure — discard plant. Potassium deficiency = orange spots on older leaves.",
+    watering: "Water when top 1–2 inches of soil are dry (every 7–10 days). Keep soil lightly moist but not soggy. Use well-draining palm mix. Reduce in winter. Areca hates wet feet — yellowing = drowning. Mist fronds daily in dry climates.",
+    light: "Bright filtered/indirect light — east or west window with sheer curtain. Tolerates medium light but grows slowly. Avoid direct afternoon sun (scorches). Rotate weekly for even growth. Great for bright offices or atriums.",
+    fertilizer: "Feed monthly from March–September with palm-specific slow-release fertilizer (8-2-12 or similar). Liquid feed every 2 weeks if fast growth desired. Avoid high-nitrogen — causes weak fronds. Flush soil quarterly to remove salts."
+    },
+    rubber: {
+    disease: "Rubber Plant (Ficus elastica) diseases: Sudden leaf drop = shock from moving, cold draft, over/under-watering, or low light. Edema (blisters on leaves) = inconsistent watering. Mealybugs & scale on stems — wipe with alcohol. Root rot from poor drainage — repot every 2 years. Anthracnose (brown spots) = fungal — improve airflow.",
+    watering: "Water when top 2 inches of soil are dry (every 7–14 days). Water thoroughly, let drain. Reduce in winter. Wipe dusty leaves monthly — they photosynthesize! Use lukewarm water. Rubber plant prefers slight drying between waterings.",
+    light: "Bright indirect light — east or west window. Tolerates medium but leaves lose gloss. Direct morning sun okay, avoid harsh afternoon. Rotate for symmetry. Low light = small, dark leaves and legginess.",
+    fertilizer: "Feed every 4 weeks in spring/summer with balanced houseplant fertilizer (20-20-20) at ½ strength. Skip winter. Flush soil every 3 months. New growth = feeding time! Use slow-release pellets for convenience."
+    },
+    boston: {
+    disease: "Boston Fern (Nephrolepis exaltata) diseases: Brown, crispy fronds = low humidity or underwatering. Pale, sparse growth = insufficient light. Root rot from soggy soil — use chunky, airy mix. Mealybugs or scale under fronds — rinse and treat with neem. Leaf drop from dry air or cold (<15°C).",
+    watering: "Keep soil consistently moist — water 2–3 times weekly in summer, less in winter. Never let it dry out. Use distilled water if possible. Mist daily or use humidifier. Bottom watering prevents crown rot. Ideal for bathrooms or kitchens.",
+    light: "Bright indirect light or dappled shade — north or east window. Avoid direct sun (scorches). Tolerates lower light but grows slowly. Grow lights (12–16 hrs) work well indoors.",
+    fertilizer: "Feed weekly in growing season with diluted liquid fertilizer (20-20-20 at ¼ strength). Reduce to monthly in winter. Over-fertilizing burns fronds. Use fish emulsion for lush growth."
+    },
+    croton: {
+    disease: "Croton (Codiaeum variegatum) diseases: Leaf drop = stress (cold, dry air, moving, underwatering). Spider mites = yellow speckling + webbing — shower and apply miticide. Root rot = soggy soil — repot in well-draining mix. Fungal leaf spot = improve airflow. Color fading = low light.",
+    watering: "Water when top 1 inch is dry (every 5–7 days). Keep evenly moist in summer, slightly drier in winter. Mist daily for humidity. Crotons hate dry soil — wilting = emergency watering. Use warm water.",
+    light: "Very bright direct light — south window. 6+ hours of sun keeps colors vivid. Low light = green, dull leaves. Outdoors: full sun in morning, shade in afternoon. Rotate often.",
+    fertilizer: "Feed every 2–3 weeks in spring/summer with high-nitrogen colorful leaf fertilizer (e.g., 24-8-16). Reduce in winter. Flush soil to prevent burn. Vibrant colors = proper feeding + light."
+    },
+    oyster: {
+    disease: "Oyster Plant (Tradescantia spathacea) diseases: Leaf rot from overwatering — improve drainage. Brown tips = dry air or fluoride. Mealybugs in leaf axils — dab with alcohol. Leggy growth = low light. Fungal spots = avoid overhead watering.",
+    watering: "Water when top 1 inch is dry (every 5–7 days). Keep moderately moist. Well-draining soil essential. Reduce in winter. Tolerates slight drought better than soggy.",
+    light: "Bright indirect to partial shade. East or west window. Direct sun okay in morning. Low light = weak, stretched growth. Variegated types need more light.",
+    fertilizer: "Feed monthly in spring/summer with balanced liquid fertilizer at ½ strength. Skip winter. Easy on fertilizer — burns easily."
+    },
+    cactus: {
+    disease: "Cactus diseases: Basal rot = overwatering — cut away soft parts, let callous, repot dry. Mealybugs = white fluff — alcohol swab. Corking (woody base) = normal aging. Sunburn = pale patches — acclimate gradually to full sun.",
+    watering: "Water deeply every 2–4 weeks in summer when soil is fully dry. Monthly or less in winter. Use cactus mix + perlite. No water in dormancy (winter for most). Terracotta pots help dry faster.",
+    light: "Full direct sun — 6+ hours. South window. Outdoors: full sun. Low light = etiolation (tall, thin). Rotate for even shape.",
+    fertilizer: "Feed 2–3 times in growing season (spring–summer) with cactus fertilizer (5-10-10) at ¼ strength. No winter feeding. Less is more!"
+    },
+    tulsi: {
+    disease: "Tulsi (Holy Basil) diseases: Downy mildew (yellow + purple undersides) = improve airflow, neem spray. Aphids on new growth — hose off or use soap. Root rot = drainage issue. Leaf drop = cold (<15°C) or overwatering.",
+    watering: "Keep soil moist but not waterlogged — water daily in summer, every 2 days in winter. Morning watering best. Mulch to retain moisture. Pinch tips for bushiness.",
+    light: "Full sun — 6+ hours. South or west window. Tolerates heat. Indoors: grow light if needed. Weak growth = more sun!",
+    fertilizer: "Apply cow manure or vermicompost monthly. Liquid seaweed or neem cake water weekly. Avoid chemical fertilizers — tulsi is sensitive."
+    },
+    dragon: {
+    disease: "Dragon Plant (Dracaena spp.) diseases: Brown tips = fluoride, dry air, or overwatering — use filtered water, mist. Leaf spot = fungal — remove affected, improve air. Mealybugs in leaf joints — alcohol wipe. Soft stem = root rot.",
+    watering: "Water when top 1–2 inches dry (every 10–14 days). Reduce in winter. Well-draining soil. Wipe leaves to remove dust. Avoid cold water.",
+    light: "Bright to medium indirect light. East or west window. Tolerates low light but grows slowly. Direct sun scorches tips.",
+    fertilizer: "Feed every 6 weeks in spring/summer with balanced fertilizer (10-10-10) at ½ strength. Skip winter. Flush soil yearly."
+    },
+    bamboo: {
+    disease: "Lucky Bamboo (Dracaena sanderiana) diseases: Yellow stalks = too much light/fertilizer or old age. Root rot in water = change weekly. Brown tips = dry air or chlorine. Algae in vase = keep in indirect light.",
+    watering: "In water: change every 7–10 days with filtered water. In soil: keep moist, not soggy. Use distilled if tap water is hard. Submerge roots only.",
+    light: "Bright indirect light. Avoid direct sun (yellows leaves). Tolerates fluorescent office light. East window ideal.",
+    fertilizer: "2–3 drops of liquid fertilizer in water monthly (spring–summer). Skip winter. Over-fertilizing burns roots."
+    },
+    shami: {
+    disease: "Shami Plant (Prosopis cineraria) diseases: Leaf curl = aphids or water stress. Root rot = poor drainage. Powdery mildew = high humidity — neem oil. Slow growth = compacted soil.",
+    watering: "Water moderately — 2–3 times weekly in summer, once in winter. Drought-tolerant once established. Deep watering encourages roots.",
+    light: "Full sun — 6+ hours. Thrives in heat. Ideal for balconies or outdoors. Tolerates reflected heat.",
+    fertilizer: "Apply organic compost or bone meal at planting. Liquid feed monthly in growing season. Avoid excess nitrogen."
+    },
+    jasmine: {
+    disease: "Jasmine diseases: Bud drop = dry soil, low humidity, or temperature swings. Aph Amides or spider mites — neem oil weekly. Root rot = improve drainage. Yellow leaves = iron deficiency — chelated iron spray.",
+    watering: "Keep soil evenly moist during flowering. Water daily in summer, less in winter. Morning watering. Mulch to retain moisture.",
+    light: "Full sun to partial shade — 4–6 hours direct sun. South or west window. More sun = more blooms.",
+    fertilizer: "Use high-phosphorus bloom booster (10-30-20) weekly during bud formation. Reduce after flowering. Banana peel tea = natural potassium."
+    },
+    marigold: {
+    disease: "Marigold diseases: Aster yellows (deformed growth) = remove infected plants. Powdery mildew = sulfur spray. Slugs/snails = beer traps or crushed eggshells. Wilt = water at base, not leaves.",
+    watering: "Water when top 1 inch is dry. Avoid overhead watering — causes fungal issues. Morning watering best. Mulch to prevent splash.",
+    light: "Full sun — 6+ hours. More sun = more flowers. Tolerates heat. Deadhead spent blooms for continuous flowering.",
+    fertilizer: "Incorporate compost at planting. Side-dress with 5-10-10 every 4 weeks. Avoid excess nitrogen — causes leafy growth, fewer blooms."
+    }
+  };
+
+  // Logic: check multiple matches
+  const lowerMsg = userMsg.toLowerCase();
+  let responseParts = [];
+  let foundPlant = null;
+
+  for (const plant in plantKeywords) {
+    if (lowerMsg.includes(plant)) {
+      foundPlant = plant;
+      const topics = plantKeywords[plant];
+      for (const topic in topics) {
+        if (lowerMsg.includes(topic)) {
+          responseParts.push(topics[topic]);
+        }
       }
-
-      const botMsg = document.createElement("p");
-      botMsg.innerHTML = "<strong>Nurturing AI Assistant:</strong> " + botReply;
-      chatBody.appendChild(botMsg);
-
-      chatBody.scrollTop = chatBody.scrollHeight;
-      input.value = "";
+      if (responseParts.length === 0) {
+        responseParts.push(`💡 ${plant.charAt(0).toUpperCase() + plant.slice(1)} is a beautiful plant! Ask me about its watering, light, or disease care 🌿.`);
+      }
+      break;
     }
   }
+
+  let finalResponse = "";
+  if (responseParts.length > 0) {
+    finalResponse = responseParts.join("\n\n");
+  } else {
+    finalResponse = "I'm not sure about that yet 🌱. Try asking something like 'Monstera watering' or 'Rose disease'.";
+  }
+
+  // Simulate AI delay
+  setTimeout(() => {
+    botBubble.textContent = finalResponse;
+    chatBody.scrollTop = chatBody.scrollHeight;
+  }, 700);
+
+  input.value = "";
 }
 
 // Enable Enter key to send message in chatbot
@@ -691,23 +858,159 @@ if (chatInput) {
 // Sidebar toggle
 function toggleSidebar() {
   const sidebar = document.getElementById("sidebar");
-  const hamburger = document.querySelector(".hamburger");
   sidebar.classList.toggle("open");
+}
 
-  if (sidebar.classList.contains("open")) {
-    hamburger.classList.add("hidden"); // hide ☰
-  } else {
-    hamburger.classList.remove("hidden"); // show ☰
+// Show sections
+function showSection(sectionId, element) {
+  document.querySelectorAll(".content-section").forEach(sec => sec.style.display = "none");
+  document.getElementById(sectionId).style.display = "block";
+
+  // Highlight active menu
+  document.querySelectorAll(".sidebar-menu a").forEach(a => a.classList.remove("active"));
+  element.classList.add("active");
+
+  // Close sidebar after navigation
+  document.getElementById("sidebar").classList.remove("open");
+
+  // If user opens My Plants — refresh it
+  if (sectionId === "myPlantsSection") displayMyPlants();
+}
+
+// ---- My Plants Logic ----
+let selectedPlants = JSON.parse(localStorage.getItem("myPlants")) || [];
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Show home section by default
+  showSection("homeSection", document.querySelector(".sidebar-menu a.active"));
+
+  // Enable click to add plants
+  const plantCards = document.querySelectorAll(".plant-card");
+  plantCards.forEach(card => {
+    card.addEventListener("click", () => {
+      const plantName = card.dataset.name;
+      const plantImg = card.querySelector("img").src;
+
+      if (!selectedPlants.some(p => p.name === plantName)) {
+        selectedPlants.push({ name: plantName, img: plantImg });
+        localStorage.setItem("myPlants", JSON.stringify(selectedPlants));
+        alert(`${plantName} added to your collection!`);
+      } else {
+        alert(`${plantName} is already in your collection!`);
+      }
+    });
+  });
+});
+
+// Display user's selected plants
+function displayMyPlants() {
+  const mySection = document.getElementById("myPlantsSection");
+
+  // Clear all existing content
+  const oldContent = mySection.querySelectorAll(".my-plant-gallery, .empty-message, .add-more-plants");
+  oldContent.forEach(element => element.remove());
+
+  if (selectedPlants.length === 0) {
+    const msg = document.createElement("div");
+    msg.classList.add("empty-message");
+    msg.innerHTML = `
+      <div style="text-align:center; padding:40px; border:2px dashed #2e7d32; border-radius:12px; background:#f1f8e9;">
+        <h2>🌿 You don’t have any plants yet!</h2>
+        <p style="color:#555; font-size:1.1rem;">Select plants for yourself from the available plants on the <strong>Home</strong> section.</p>
+        <button onclick="goToHome()" style="margin-top:20px; padding:10px 18px; background:#2e7d32; color:white; border:none; border-radius:8px; cursor:pointer;">
+          Go to Home 🌱
+        </button>
+      </div>
+    `;
+    mySection.appendChild(msg);
+    return;
+  }
+
+  // Create gallery
+  const gallery = document.createElement("div");
+  gallery.classList.add("my-plant-gallery");
+  gallery.style.display = "grid";
+  gallery.style.gridTemplateColumns = "repeat(auto-fit, minmax(150px, 1fr))";
+  gallery.style.gap = "20px";
+  gallery.style.padding = "20px";
+
+  selectedPlants.forEach((plant, index) => {
+    const div = document.createElement("div");
+    div.classList.add("my-plant-card");
+    div.style.background = "#fff";
+    div.style.borderRadius = "12px";
+    div.style.boxShadow = "0 4px 10px rgba(0,0,0,0.1)";
+    div.style.padding = "10px";
+    div.style.textAlign = "center";
+
+    div.innerHTML = `
+      <img src="${plant.img}" alt="${plant.name}" style="width:100%; border-radius:10px;">
+      <h4 style="margin-top:10px; color:#2e7d32;">${plant.name}</h4>
+      <button onclick="removePlant(${index})" style="margin-top:8px; background:#d32f2f; color:white; border:none; border-radius:6px; padding:6px 10px; cursor:pointer;">Remove</button>
+    `;
+
+    gallery.appendChild(div);
+  });
+
+  // Add "Add More" button
+  const addMore = document.createElement("div");
+  addMore.classList.add("add-more-plants");
+  addMore.style.textAlign = "center";
+  addMore.innerHTML = `
+    <button onclick="goToHome()" style="margin-top:20px; padding:10px 18px; background:#2e7d32; color:white; border:none; border-radius:8px; cursor:pointer;">
+      Add More Plants 🌱
+    </button>
+  `;
+
+  mySection.appendChild(gallery);
+  mySection.appendChild(addMore);
+}
+
+// Remove a plant from My Plants
+function removePlant(index) {
+  const confirmDelete = confirm(`Remove ${selectedPlants[index].name} from your collection?`);
+  if (confirmDelete) {
+    selectedPlants.splice(index, 1);
+    localStorage.setItem("myPlants", JSON.stringify(selectedPlants));
+    displayMyPlants();
   }
 }
 
-function previewPlantImage(event, imgId) {
-  const file = event.target.files[0];
-  if (file) {
-    const reader = new FileReader();
-    reader.onload = function (e) {
-      document.getElementById(imgId).src = e.target.result;
-    };
-    reader.readAsDataURL(file);
-  }
+// Go to Home
+function goToHome() {
+  const homeLink = document.querySelector(".sidebar-menu a[onclick*='homeSection']");
+  showSection("homeSection", homeLink);
 }
+
+// Global logout function
+function handleLogout() {
+    // Clear stored data
+    localStorage.clear();
+    // Redirect to index page
+    window.location.href = '../index.html';
+}
+
+// Attach logout handlers when the document loads
+document.addEventListener('DOMContentLoaded', function() {
+    // Get all logout elements
+    const headerLogout = document.querySelector('.header-actions .logout-btn');
+    const sidebarLogout = document.querySelector('.sidebar-menu a[onclick*="logout"]');
+    
+    if (headerLogout) {
+        headerLogout.onclick = function(e) {
+            e.preventDefault();
+            if (confirm('Are you sure you want to logout?')) {
+                handleLogout();
+            }
+        };
+    }
+    
+    if (sidebarLogout) {
+        sidebarLogout.onclick = function(e) {
+            e.preventDefault();
+            if (confirm('Are you sure you want to logout?')) {
+                handleLogout();
+            }
+        };
+    }
+});
